@@ -14,7 +14,7 @@ Model.prototype = new Observable();
  * on change, notify the Observable to update the view
  */
 Model.prototype.itsTime = function () {
-    var t = this.setCurrentTime();
+    let t = this.setCurrentTime();
     this.currentTime = "" + t.hour + ':' + t.minute + ':' + t.second;
     this.hsl = 'hsl(' + t.hour + ',' + t.minute + '%,' + t.second + '%)';
     this.notify();
