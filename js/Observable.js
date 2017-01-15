@@ -26,7 +26,7 @@ Observable.prototype.detach = function (observer) {
  * on change, update the observers
  */
 Observable.prototype.notify = function () {
-    for(var ii = 0; ii < this.observers.length; ii++){
-        this.observers[ii].update();
+    for(let observer of this.observers){
+        observer.update();
     }
 };
