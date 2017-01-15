@@ -1,7 +1,7 @@
 /**
  * Observer
- * @constructor
  */
-function Observer() {
-    this.update = function () {}
+class Observer{
+    constructor(){}
+    update(){}
 }
