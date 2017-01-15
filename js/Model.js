@@ -13,8 +13,8 @@ class Model extends Observable{
      */
     itsTime(){
         let t = this.setCurrentTime();
-        this.currentTime = '' + t.hour + ':' + t.minute + ':' + t.second;
-        this.hsl = 'hsl(' + t.hour + ',' + t.minute + '%,' + t.second + '%)';
+        this.currentTime = `${t.hour}:${t.minute}:${t.second}`;
+        this.hsl = `hsl(${t.hour}, ${t.minute}%, ${t.second}%)`;
         super.notify();
     }
     /**
