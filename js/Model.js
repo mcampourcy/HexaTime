@@ -15,7 +15,7 @@ class Model extends Observable{
         let t = this.setCurrentTime();
         this.currentTime = '' + t.hour + ':' + t.minute + ':' + t.second;
         this.hsl = 'hsl(' + t.hour + ',' + t.minute + '%,' + t.second + '%)';
-        this.notify();
+        super.notify();
     }
     /**
      * Get the current time, return it in the good format
