@@ -1,7 +1,11 @@
 /**
- * Observer
+ * Observer class
+ * @author  mcampourcy - december 2016
  */
-class Observer{
+class Observer {
+
     constructor(){}
+
     update(){}
+
 }

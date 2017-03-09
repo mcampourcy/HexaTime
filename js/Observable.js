@@ -1,28 +1,36 @@
 /**
- * Observable - contains an array with all the observers
+ * Observable class - contains an array with all the observers
+ * @author  mcampourcy - december 2016
  */
-class Observable{
-    constructor(){
-        this.observers = []
-    }
+class Observable {
+
     /**
-     * add an observer to the array
+     * Observable constructor
+     */
+    constructor() {
+        this.observers = [];
+    }
+
+    /**
+     * Add an observer to the array
      * @param observer
      */
-    attach(observer){
+    attach(observer) {
         this.observers.push(observer);
     }
+
     /**
-     * remove an observer of the array
+     * Remove an observer of the array
      * @param observer
      */
-    detach(observer){
+    detach(observer) {
         this.observers.splice(this.observers.indexOf(observer), 1);
     }
+
     /**
-     * on change, update the observers
+     * On change, update the observers
      */
-    notify(){
+    notify() {
         for(let observer of this.observers){
             observer.update();
         }

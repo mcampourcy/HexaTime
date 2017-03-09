@@ -1,23 +1,25 @@
 /**
- * View - parent : Observer
- * contains the model
+ * View class
+ * @extends Observer
+ * @author  mcampourcy - december 2016
  */
 class View extends Observer{
+
     /**
-     * constructor
+     * View constructor
      * @param model
      */
-    constructor(model){
+    constructor(model) {
         super();
         this.model = model;
         this.title = document.getElementById('title');
     }
+
     /**
-     * update on changes
-     * each seconds, change the color
+     * Update on changes - Set the body background color
      */
     update(){
-        document.body.style.backgroundColor = this.model.hsl;
+        document.body.style.backgroundColor = "hsl(" + this.model.hsl + ")";
         this.title.textContent = this.model.currentTime;
     }
 }
