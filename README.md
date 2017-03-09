@@ -7,4 +7,4 @@ Takes the current hh:mm:ss and convert it in HSL (in hexa in the first place, bu
 
 Small exercice to test the Observer pattern in ES6
 
-![class diagram](classDiagram.png)
+![class diagram](img/classDiagram.png)
