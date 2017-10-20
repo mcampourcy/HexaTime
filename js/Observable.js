@@ -1,6 +1,5 @@
 /**
  * Observable class - contains an array with all the observers
- * @author  mcampourcy - december 2016
  */
 class Observable {
 

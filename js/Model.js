@@ -1,7 +1,6 @@
 /**
  * Model class, get and set the data
  * @extends Observable
- * @author  mcampourcy - december 2016
  */
 class Model extends Observable {
 

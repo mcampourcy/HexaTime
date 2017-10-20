@@ -1,7 +1,6 @@
 /**
  * View class
  * @extends Observer
- * @author  mcampourcy - december 2016
  */
 class View extends Observer{
 
